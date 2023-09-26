@@ -26,5 +26,5 @@ jobs:
 
       - name: Run pytest
         run: |
-          cd pda/tests
-          poetry run pytest tests
+          cd pda
+          poetry run pytest /tests
