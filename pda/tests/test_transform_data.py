@@ -36,4 +36,4 @@ def test_get_data_from_api_with_patch(mock_get):
     actual_output = my_module.get_and_transform_data_from_api(10)
 
     # Assert that the mocked JSON response is equal to the expected output
-    assert actual_output == expected_output, f"Expected {expected_output}, but got {actual_output}"
+    assert actual_output == expected_output, (f"Expected value is: {expected_output} but got {actual_output}")
