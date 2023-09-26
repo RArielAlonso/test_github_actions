@@ -10,6 +10,7 @@ packages = [{ include = "pda" }]
 python = ">=3.9"
 requests = "^2.31.0"
 pandas = "^2.1.0"
+flake8 = "^6.1.0"
 
 
 [build-system]
