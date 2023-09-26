@@ -15,7 +15,7 @@ def get_weather(lat, long):
     base_url = "https://api.weather.gov/points/"
     response = requests.get(f"{base_url}{lat},{long}")
     data = response.json()
-    if 'properties' not in data.keys():
+    if "properties" not in data.keys():
         raise Exception("Value of coordinates are not correct, retry")
     else:
-        return data['properties']['forecastHourly']
+        return data["properties"]["forecastHourly"]

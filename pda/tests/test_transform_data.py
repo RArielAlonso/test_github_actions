@@ -15,25 +15,23 @@ def test_get_api_data_with_mocks():
     # Call the function - instead of calling requests.get(),
     # it will call the mock, which returns mock_response,
     # which has a .json() method that returns the test dictionary
-    data = my_module.get_and_transform_data_from_api('http://fakeurl')
+    data = my_module.get_and_transform_data_from_api("http://fakeurl")
 
     # Assert the function returns the correct data
     assert data == {"result_number": 10}
 
 
-@patch('get_data_from_api.requests.get')
+@patch("get_data_from_api.requests.get")
 def test_get_data_from_api_with_patch(mock_get):
     # Mocked JSON response
-    mock_get.return_value.json.return_value = {
-        "result_number": "10"
-    }
+    mock_get.return_value.json.return_value = {"result_number": "10"}
 
-    expected_output = {
-        "result_number": 10
-    }
+    expected_output = {"result_number": 10}
 
     # Call the function with the mocked GET request
     actual_output = my_module.get_and_transform_data_from_api(10)
 
     # Assert that the mocked JSON response is equal to the expected output
-    assert actual_output == expected_output, (f"Expected value is: {expected_output} but got {actual_output}")
+    assert (
+        actual_output == expected_output
+    ), f"Expected value is: {expected_output} but got {actual_output}"

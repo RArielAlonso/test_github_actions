@@ -11,4 +11,6 @@ def test_add():
     actual_output = my_module.add(a, b)
 
     # assert
-    assert actual_output == expected_output, f"Expected {expected_output}, but got {actual_output}"
+    assert (
+        actual_output == expected_output
+    ), f"Expected {expected_output}, but got {actual_output}"

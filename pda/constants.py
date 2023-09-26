@@ -1,2 +1,2 @@
-MY_VAR = 'c'
-MY_NAME = 'Ariel'
+MY_VAR = "c"
+MY_NAME = "Ariel"

@@ -11,7 +11,7 @@ def get_data_from_api(num):
     Returns:
     dict : The JSON response received from the GET request.
     """
-    url = f'http://echo.jsontest.com/result_number/{num}'
+    url = f"http://echo.jsontest.com/result_number/{num}"
     response = requests.get(url)
     return response.json()
 
@@ -28,5 +28,5 @@ def get_and_transform_data_from_api(num):
     """
     data = get_data_from_api(num)
 
-    data['result_number'] = int(data['result_number'])
+    data["result_number"] = int(data["result_number"])
     return data
