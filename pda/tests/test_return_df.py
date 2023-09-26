@@ -1,5 +1,5 @@
 import pandas as pd
-import example_pytest.return_df as my_module
+import pda.return_df as my_module
 
 
 def test_create_dataframe():

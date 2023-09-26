@@ -1,4 +1,4 @@
-import example_pytest.get_data_from_api as my_module
+import pda.get_data_from_api as my_module
 from unittest.mock import patch, Mock, MagicMock
 
 

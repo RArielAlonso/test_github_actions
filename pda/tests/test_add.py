@@ -1,4 +1,4 @@
-import example_pytest.add as my_module
+import pda.add as my_module
 
 
 def test_add():
