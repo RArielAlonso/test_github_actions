@@ -27,4 +27,4 @@ jobs:
       - name: Run pytest
         run: |
           cd pda
-          poetry run pytest /tests
+          poetry run python -m pytest tests
